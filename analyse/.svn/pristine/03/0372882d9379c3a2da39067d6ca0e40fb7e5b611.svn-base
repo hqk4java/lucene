@@ -1,0 +1,26 @@
+#被索引文件的根路径,可以设定多个 
+[lucene_fileRootPaths]
+1=F:/lucenedir/file-source
+#索引库的路径
+[lucene_indexDBPath]
+indexDBPath=F:/lucenedir/index
+#过滤被索引目录,即在此目录中的数据不会被检索到 
+[lucene_removePaths]
+1=F:/lucenedir/file02/0200
+2=F:/lucenedir/file01/xx02
+#过滤被索引的文件,即在此集合中的数据不会被检索到 
+[lucene_removeFilePaths]
+1=F:/lucenedir/file01/xxx01/yyy.txt
+#通过文件后缀过滤过滤被索引文件,即在此集合中的数据不会被检索到 
+[lucene_removeFilePaths]
+1=.init
+2=.docx
+
+#是否创建索引
+[lucene_isInitIndex]
+isInitIndex=true
+[lucene_highlighter]
+begin=<font style='color:red'>
+end=</font>
+[lucene_highlighterLength]
+length=100

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>analyse</display-name>
+	<!-- <filter>
+	    <filter-name>WebServicesFilter</filter-name>
+	    <filter-class>com.bluedon.analyse.filter.WebServicesFilter</filter-class>
+	</filter>    
+	<filter-mapping>
+	    <filter-name>WebServicesFilter</filter-name>
+	    <url-pattern>/services/*</url-pattern>
+	</filter-mapping> -->
+    
+  <servlet>
+		<servlet-name>XFireServlet</servlet-name>
+		<servlet-class>
+			org.codehaus.xfire.transport.http.XFireConfigurableServlet
+		</servlet-class>
+  </servlet>
+  <servlet-mapping>   
+	    <servlet-name>XFireServlet</servlet-name>  
+        <url-pattern>/servlet/XFireServlet/*</url-pattern>  
+   </servlet-mapping>  
+   <servlet-mapping>  
+      <servlet-name>XFireServlet</servlet-name>  
+      <url-pattern>/services/*</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalyseSearchServlet</servlet-name>
+    <servlet-class>com.bluedon.analyse.servlet.AnalyseSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnalyseSearchServlet</servlet-name>
+    <url-pattern>/servlet/AnalyseSearchServlet</url-pattern>
+  </servlet-mapping>
+  <!--统一出错页面-->
+	<error-page>
+		<error-code>403</error-code>
+		<location>/common/403error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/common/500error.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/common/500error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/common/404error.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/common/500error.jsp</location>
+	</error-page>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

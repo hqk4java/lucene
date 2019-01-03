@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+body{font-family: 'Microsoft YaHei','Open Sans', 'trebuchet ms',"Arial";}
+/*width:1200px*/
+.wrap{width: 1200px;margin: 0 auto;}
+
+.clearfix { display:inline-block;} 
+.clear{ clear: both;}
+.clearer{clear: both; font-size:1px; line-height:1px; height:1px; visibility: hidden;}
+
+/*登陆组测*/
+.nav img, .nav .nav-list li {
+  float: left;
+}
+
+.nav .nav-list {
+  float: right;
+}
+
+.nav {
+  width: 100%;
+  background-color: #fafafa;
+  height: 56px;
+}
+.nav img {
+  margin-top: 9px;
+}
+.nav .nav-list li {
+  line-height: 56px;
+  color: #e8e8e8;
+  font-size: 12px;
+}
+.nav .nav-list li > a {
+  margin: 0 16px;
+  color: #999;
+  text-decoration: none;
+}
+
+/*导航列表*/
+.list_nav{
+  border-top:1px solid #e5e5e5;
+  border-bottom: 1px solid #ef0021;
+}
+.list_nav ul {
+  min-width: 1200px;
+  overflow: hidden;
+}
+.list_nav ul li {
+  float: left;
+  width: 10%;
+  height: 68px;
+  padding-top: 22px;
+}
+.list_nav ul li a {
+  text-decoration: none;
+}
+.list_nav ul li span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.list_nav ul li span:nth-child(1) {
+  line-height: 28px;
+  font-size: 14px;
+  color: #333;
+}
+.list_nav ul li span:nth-child(2) {
+  line-height: 28px;
+  font-size: 12px;
+  color: #c6c6c6;
+}
+.list_nav ul li:hover, .list_nav ul li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd3d57), to(#ea5750));
+  background: -webkit-linear-gradient(top, #dd3d57, #ea5750);
+  background: linear-gradient(top, #dd3d57, #ea5750);
+}
+.list_nav ul li:hover span, .list_nav ul li.active span {
+  color: #fff;
+}
+
+
+/*尾部*/
+.footer {
+  width: 100%;
+  height: 167px;
+  background-color: #d45252;
+}
+.footer .connect {
+  float: left;
+  padding: 40px 130px 74px 32px;
+}
+.footer .connect p {
+  color: #fff;
+  font-size: 14px;
+}
+.footer .connect p:nth-child(1) {
+  line-height: 42px;
+  font-size: 24px;
+}
+.footer .attention {
+  float: left;
+  padding: 40px 130px 74px;
+}
+.footer .attention p {
+  color: #fff;
+}
+.footer .attention p:nth-child(1) {
+  line-height: 42px;
+  font-size: 16px;
+}
+.footer .attention p:nth-child(2) span:nth-child(1) {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 22px;
+  margin-right: 20px;
+  background: url("../img/QQ.png");
+}
+.footer .attention p:nth-child(2) span:nth-child(2) {
+  display: block;
+  float: left;
+  width: 27px;
+  height: 22px;
+  background: url("../img/wechat.png");
+}
+.footer .footer_list {
+  float: left;
+  width: 45%;
+  margin-top: 40px;
+}
+.footer .footer_list ul {
+  width: 100%;
+}
+.footer .footer_list ul li {
+  float: left;
+}
+.footer .footer_list ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 22px;
+  line-height: 42px;
+}
+
+

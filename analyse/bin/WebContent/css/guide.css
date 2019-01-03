@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*标题*/
+/*更多*/
+.main {
+  background-color: #fff;
+  padding-bottom: 108px;
+  overflow: hidden;
+  /*列表*/
+  /*推荐与标签*/
+}
+.main .guide_list {
+  float: left;
+  width: 1040px;
+  background-color: #fff;
+}
+.main .guide_list > ul {
+  padding: 0 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main .guide_list > ul li {
+  margin-top: 6px;
+  cursor: pointer;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+}
+.main .guide_list > ul li a {
+  text-decoration: none;
+}
+.main .guide_list > ul li .issue {
+  float: left;
+  width: 88px;
+  padding: 0 5px;
+  margin-left: 0px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li .issue .date {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #1e1e1e;
+}
+.main .guide_list > ul li .issue .year {
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+  color: #a0a0a0;
+}
+.main .guide_list > ul li .li_main {
+  float: left;
+  width: 1000px;
+  padding-left: 14px;
+}
+.main .guide_list > ul li .li_main .title {
+  font-size: 18px;
+  line-height: 54px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li .li_main .title a {
+  color: #666;
+}
+.main .guide_list > ul li .li_main .li_nr {
+  font-size: 12px;
+  color: #666;
+  width: 100%;
+  line-height: 22px;
+}
+.main .guide_list > ul li .li_main .li_nr .nr {
+  float: left;
+  width: 610px;
+  color: #999;
+  margin-left: 0px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li .li_main .li_nr .arrow_right {
+  float: right;
+  padding-right: 6px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li .li_main .li_nr .arrow_right i {
+  display: block;
+  width: 18px;
+  height: 22px;
+  background: url(../img/guide_arrow_right.png) no-repeat;
+  float: right;
+}
+.main .guide_list > ul li:first-child {
+  margin-top: 14px;
+}
+.main .guide_list > ul li:hover .issue {
+  margin-left: 10px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li:hover .li_main .title {
+  padding-left: 10px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li:hover .li_main .title a {
+  color: #c30d23;
+}
+.main .guide_list > ul li:hover .li_main .li_nr .nr {
+  margin-left: 10px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li:hover .li_main .li_nr .arrow_right {
+  padding-right: 36px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .guide_list > ul li:hover .li_main .li_nr .arrow_right i {
+  background: url(../img/guide_arrow_right_act.png) no-repeat;
+}
+.main .guide_list .more_btn {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main .guide_list .more_btn a {
+  display: block;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #e1dedc;
+  text-indent: 38px;
+  font-size: 14px;
+  color: #803b2d;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  background: url(../img/arrow-bottom.png) no-repeat 80px center;
+  background-size: 14px 6 px;
+}
+.main .recommend_label {
+  float: right;
+  width: 316px;
+  background-color: #f6f6f6;
+  /*推荐*/
+  /*标签*/
+}
+.main .main-right {
+  float: left;
+  width: 316px;
+  margin-left: 24px;
+}
+.main .main-right .hot_news {
+  width: 100%;
+  margin-top: 14px;
+}
+.main .main-right .hot_news .title {
+  height: 38px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+.main .main-right .hot_news .title a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main .main-right .hot_news .title a span {
+  float: left;
+  color: #333333;
+  height: 36px;
+  border-bottom: 4px solid #e23838;
+}
+.main .main-right .hot_news .title a span .important {
+  color: #c30d23;
+}
+.main .main-right .hot_news .list {
+  width: 100%;
+  margin-top: 12px;
+}
+.main .main-right .hot_news .list li {
+  width: 306px;
+  line-height: 30px;
+  font-size: 14px;
+  position: relative;
+  margin-left: 0px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .main-right .hot_news .list li a {
+  text-decoration: none;
+}
+.main .main-right .hot_news .list li a span:first-child {
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #999;
+}
+.main .main-right .hot_news .list li a .nr {
+  float: left;
+  width: 100%;
+  margin-left: 14px;
+  color: #333;
+}
+.main .main-right .hot_news .list li:hover {
+  margin-left: 10px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.main .main-right .hot_news .list li:hover a span:first-child {
+  background-color: #d45252;
+}
+.main .main-right .hot_news .list li:hover a .nr {
+  color: #d45252;
+}
+
+
+/*分页插件*/
+.paging {
+  margin-top: 68px;
+}
+.paging .pageTool_main {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.paging .pageTool_main .totalCount, .paging .pageTool_main .page, .paging .pageTool_main .size, .paging .pageTool_main .count {
+  color: #ce2038;
+  margin: 0 4px;
+}
